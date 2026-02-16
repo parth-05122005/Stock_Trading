@@ -1,0 +1,23 @@
+{
+  "name": "kite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.13.5",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "lightweight-charts": "^5.1.0",
+    "lucide-react": "^0.564.0",
+    "pg": "^8.16.3",
+    "ws": "^8.18.3"
+  }
+}
