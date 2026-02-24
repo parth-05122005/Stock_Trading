@@ -1,4 +1,5 @@
-# í³ˆ APEX TRADER â€” Stock Trade Simulator
+# ï¿½ï¿½ï¿½ APEX TRADER â€” Stock Trade Simulator
+# ğŸš€ [Live Demo](https://apex-trader-frontend.vercel.app)
 
 A full-stack real-time stock trading simulator built with React, Node.js, PostgreSQL, and WebSockets. Practice trading with live market data from the Finnhub API without risking real money.
 
@@ -6,17 +7,19 @@ A full-stack real-time stock trading simulator built with React, Node.js, Postgr
 
 ## âœ¨ Features
 
-- í´ JWT-based user authentication (register/login)
-- í²° Each new user starts with â‚¹1,00,000 virtual cash
-- í³Š Real-time stock prices via Finnhub API (REST polling every 15s)
-- í³¡ Live price broadcasting to frontend via WebSockets
-- í»’ Buy and sell stocks with instant balance updates
-- í³ Portfolio tracking with holdings and P&L per position
-- í´’ Protected routes â€” dashboard only accessible when logged in
+- ï¿½ï¿½ï¿½ JWT-based user authentication (register/login)
+- ï¿½ï¿½ï¿½ Each new user starts with â‚¹1,00,000 virtual cash
+- ï¿½ï¿½ï¿½ Real-time stock prices via Finnhub API (REST polling every 15s)
+- ï¿½ï¿½ï¿½ Live price broadcasting to frontend via WebSockets
+- ï¿½ï¿½ï¿½ Buy and sell stocks with instant balance updates
+- ï¿½ï¿½ï¿½ Portfolio tracking with holdings and P&L per position
+- ï¿½ï¿½ï¿½ Protected routes â€” dashboard only accessible when logged in
 
 ---
 
-## í»  Tech Stack
+LIVE LINK: https://apex-trader-frontend.vercel.app/
+
+## ï¿½ï¿½ï¿½ Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -29,7 +32,7 @@ A full-stack real-time stock trading simulator built with React, Node.js, Postgr
 
 ---
 
-## í³ Project Structure
+## ï¿½ï¿½ï¿½ Project Structure
 
 ```
 KITE/
@@ -177,7 +180,7 @@ Frontend runs on `http://localhost:5173`
 
 ---
 
-## í´Œ API Endpoints
+## ï¿½ï¿½ï¿½ API Endpoints
 
 ### Auth
 | Method | Endpoint | Description | Auth Required |
@@ -211,7 +214,7 @@ Authorization: Bearer <your_jwt_token>
 
 ---
 
-## í´‘ Environment Variables
+## ï¿½ï¿½ï¿½ Environment Variables
 
 | Variable | Location | Description |
 |----------|----------|-------------|
@@ -223,7 +226,7 @@ Authorization: Bearer <your_jwt_token>
 
 ---
 
-## í³¡ WebSocket
+## ï¿½ï¿½ï¿½ WebSocket
 
 The backend runs a WebSocket server on the same port as the REST API (`ws://localhost:3001`).
 
@@ -245,7 +248,7 @@ The backend runs a WebSocket server on the same port as the REST API (`ws://loca
 
 ---
 
-## íº€ Deployment Checklist
+## ï¿½ï¿½ï¿½ Deployment Checklist
 
 - [ ] Remove `NODE_TLS_REJECT_UNAUTHORIZED = '0'` from `index.js`
 - [ ] Set all environment variables on your hosting platform
@@ -257,7 +260,7 @@ The backend runs a WebSocket server on the same port as the REST API (`ws://loca
 
 ---
 
-## í·ª Testing with Thunder Client
+## ï¿½ï¿½ï¿½ Testing with Thunder Client
 
 1. **Register** â€” `POST http://localhost:3001/api/auth/register` with `{ "email": "...", "password": "..." }`
 2. **Login** â€” `POST http://localhost:3001/api/auth/login` â€” copy the token from the response
@@ -267,6 +270,6 @@ The backend runs a WebSocket server on the same port as the REST API (`ws://loca
 
 ---
 
-## í³œ License
+## ï¿½ï¿½ï¿½ License
 
 ISC
