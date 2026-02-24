@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* Custom Theme Overrides for Apex Trader */
+@theme {
+  --color-emerald-500: #10b981;
+  --font-inter: "Inter", sans-serif;
+}
+
+:root {
+  background-color: #030712; /* gray-950 */
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for a 'Terminal' look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}

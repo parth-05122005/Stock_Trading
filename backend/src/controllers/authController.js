@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const db = require('../config/db');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
@@ -60,7 +62,7 @@ exports.login = async (req, res) => {
             return res.status(401).json({ message: 'Invalid credentials.' });
         }
         const payload = { id: user.id, email: user.email };
-        const token = jwt.sign(payload, 'mysecretkey', { expiresIn: '1h' });
+        const token = jwt.sign(payload, process.env.secret_key, { expiresIn: '1h' });
         res.status(200).json({
             message: 'Logged in successfully!',
             token: token,
