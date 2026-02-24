@@ -1,7 +1,7 @@
 // This file acts as the bridge to your authController.js endpoints. Using Axios is preferred over fetch for professional projects because it handles JSON automatically and has better error interception.
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/api/auth';
+const API_URL = `${import.meta.env.VITE_API_URL}/api/auth`;
 
 export const loginUser = async (email, password) => {
   // This hits your authController.login method

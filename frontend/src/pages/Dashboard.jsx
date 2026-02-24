@@ -13,7 +13,7 @@ import {
 
 const Dashboard = () => {
   const { user, token, logout } = useAuth();
-  const { stocks, status } = useStocks('ws://localhost:3001');
+  const { stocks, status } = useStocks(import.meta.env.VITE_WS_URL);
 
   const [balance, setBalance] = useState(null);
   const [holdings, setHoldings] = useState([]);
@@ -22,7 +22,7 @@ const Dashboard = () => {
   // Fetch real portfolio data on mount
   const fetchPortfolio = async () => {
     try {
-      const res = await fetch('http://localhost:3001/api/portfolio', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/portfolio`, {
         headers: { Authorization: `Bearer ${token}` }
       });
 
@@ -58,7 +58,7 @@ const Dashboard = () => {
     if (!quantity || quantity <= 0) return;
 
     try {
-      const res = await fetch(`http://localhost:3001/api/trade/${side}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/trade/${side}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
