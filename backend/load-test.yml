@@ -1,0 +1,14 @@
+config:
+  target: "https://apex-trader-backend.onrender.com"
+  phases:
+    - duration: 60       # run for 60 seconds
+      arrivalRate: 2    # 10 new users per second
+
+scenarios:
+  - name: "Login test"
+    flow:
+      - post:
+          url: "/api/auth/login"
+          json:
+            email: "your test id"
+            password: "your password"
